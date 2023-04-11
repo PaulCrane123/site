@@ -18,14 +18,20 @@ Logbutton.addEventListener("click", (e) => {
 }
 );
 
+function buildHome() {
+  const header = document.createElement("h1")
+  header.innerText = `Hello, ${userinput}`
+}
+
 
 function checkInfo() {
   userList.forEach((user) => {
     console.log(user.username);
     if (user.username  == userinput.value){
-      user.password == passinput.value ? alert("good") : alert("pass incorrect");
+      user.password == passinput.value ? buildHome() : alert("pass incorrect");
     }else {
       alert("user not found");
     }
   })
   }
+
