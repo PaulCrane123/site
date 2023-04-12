@@ -23,6 +23,8 @@ function buildHome() {
   header.innerText = `Hello, ${userinput}`
 }
 
+buildHome()
+
 
 function checkInfo() {
   userList.forEach((user) => {
