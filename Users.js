@@ -27,12 +27,13 @@ export class User {
       userList.forEach((user) => {
         if (user.username == username ){
           break
-        }else {
-          alert("username not found")
-          return
         }
       }
-      if (user.password == password)
+      if (user.password == password) {
+        alert("log in succesful")
+      }
+        
+      
     }
   }
 
