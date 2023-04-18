@@ -6,15 +6,15 @@ export class User {
 
     userList = [
       {
-        username: "Master-User",
+        username: "master-user",
         password: "12345"
       },
       {
-        username: "Master-User2",
+        username: "master-user2",
         password:"54321"
       },
       {
-        username: "PaulCrane",
+        username: "paul-crane",
         password: "password"
       }
     ];
@@ -23,6 +23,17 @@ export class User {
         userList.push(new User(username, password));
         alert("new user added successfully");
     } 
+    authenticate(username, password){
+      userList.forEach((user) => {
+        if (user.username == username ){
+          break
+        }else {
+          alert("username not found")
+          return
+        }
+      }
+      if (user.password == password)
+    }
   }
 
 
