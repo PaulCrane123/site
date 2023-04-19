@@ -54,3 +54,27 @@ input[type=button] {
   background: #F5FFFF;
   color: blue;
 }
+
+.SignInHome {
+  background: #000000;
+  color: white;
+  font-family: Ebrima;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 10px;
+  height: 35px;
+  width: 100px;
+  border: none;
+}
+
+.SignUpHome {
+  background: #000000;
+  color: white;
+  font-family: Ebrima;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 10px;
+  height: 35px;
+  width: 100px;
+  border: none;
+}
