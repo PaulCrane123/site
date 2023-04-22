@@ -55,6 +55,10 @@ input[type=button] {
   color: blue;
 }
 
+.allTopButtons {
+  display: flex;
+}
+
 .SignInHome {
   background: #000000;
   color: white;
@@ -66,7 +70,6 @@ input[type=button] {
   width: 100px;
   border: none;
 }
-
 .SignUpHome {
   background: #000000;
   color: white;
@@ -77,4 +80,114 @@ input[type=button] {
   height: 35px;
   width: 100px;
   border: none;
+}
+
+.HomeButton {
+  background: transparent;
+  color: white;
+  font-family: Ebrima;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 10px;
+  height: 35px;
+  width: 100px;
+  border: none;
+}
+
+.FinishedProjsButton {
+  background: transparent;
+  color: white;
+  font-family: Ebrima;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 10px;
+  height: 35px;
+  width: 160px;
+  border: none;
+}
+
+.donationButton {
+  background: transparent;
+  color: white;
+  font-family: Ebrima;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 10px;
+  height: 35px;
+  width: 100px;
+  border: none;
+  padding-right: 100px;
+  padding-left: 10px;
+}
+
+.contactButton {
+  background: transparent;
+  color: white;
+  font-family: Ebrima;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 10px;
+  height: 35px;
+  width: 100px;
+  border: none;
+  padding-right: 200px;
+}
+
+.allTopButtons {
+  padding-left: 500px;
+}
+
+.bg {
+  background: linear-gradient(275deg, #324A69, #57738B);
+}
+
+.slider {
+  width: 1000px;
+  height: 600px;
+  background-color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.image-container {
+  width: 4000px;
+  background-color: pink;
+  height: 600px;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 1s;
+  -moz-transition: left 1s;
+  -o-transition: left 1s;
+  transition: left 1s;
+}
+.slide {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+#slide-2:target ~ .image-container {
+  left: -1000px;
+}
+#slide-3:target ~ .image-container {
+  left: -2000px;
+}
+#slide-4:target ~ .image-container {
+  left: -3000px;
+}
+.buttons {
+  position: relative;
+  top: -20px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: black;
 }
