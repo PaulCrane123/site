@@ -1,4 +1,4 @@
-import { addNewUser } from "./Users"
+import User from "./Users.js"
 const userinput = document.getElementById("userInput");
 const passinput = document.getElementById("passInput");
 const SignUpbutton = document.getElementById("sign_up");
@@ -20,12 +20,13 @@ Logbutton.addEventListener("click", (e) => {
 
 
 function checkInfo() {
-  userList.forEach((user) => {
-    console.log(user.username);
-    if (user.username  == userinput.value){
-      user.password == passinput.value ? alert("good") : alert("pass incorrect");
-    }else {
-      alert("user not found");
-    }
-  })
+ authenticate(userinput, passinput);
+  // userList.forEach((user) => {
+  //   console.log(user.username);
+  //   if (user.username  == userinput.value){
+  //     user.password == passinput.value ? alert("good") : alert("pass incorrect");
+  //   }else {
+  //     alert("user not found");
+  //   }
+  // })
   }
