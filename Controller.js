@@ -29,13 +29,10 @@ export default class Controller {
       this.userList.forEach((user) => {
         if (user.username == username ){
           if (user.password == password) {
-            alert("log in succesful")
+            window.location.direct("https://paulcrane123.github.io/home")
           }
         }
       })
-
-        
-      
     }
   }
 
