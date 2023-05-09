@@ -1,13 +1,16 @@
-import User from "./Users.js"
+import Controller from "./Controller.js";
 const userinput = document.getElementById("userInput");
 const passinput = document.getElementById("passInput");
 const SignUpbutton = document.getElementById("sign_up");
 const Logbutton = document.getElementById("LogIn");
 
 
+const userController = new Controller;
+
+
 SignUpbutton.addEventListener("click", (e) => {
   e.preventDefault();
-  addNewUser(userinput, passinput);
+  userController.addNewUser(userinput, passinput);
   alert("added new user and pass successfully");
 }
 );
@@ -20,7 +23,7 @@ Logbutton.addEventListener("click", (e) => {
 
 
 function checkInfo() {
- authenticate(userinput, passinput);
+ userController.authenticate(userinput, passinput);
   // userList.forEach((user) => {
   //   console.log(user.username);
   //   if (user.username  == userinput.value){
