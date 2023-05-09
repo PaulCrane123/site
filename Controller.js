@@ -29,7 +29,8 @@ export default class Controller {
       this.userList.forEach((user) => {
         if (user.username == username ){
           if (user.password == password) {
-            window.location.direct("https://paulcrane123.github.io/home")
+            window.location.href("https://paulcrane123.github.io/home");
+            alert("login successful");
           }
         }
       })
